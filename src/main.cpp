@@ -8,7 +8,7 @@ Licence:         MIT
 #include <Arduino.h>
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {
@@ -25,7 +25,7 @@ void loop() {
     for(int i = zahl; i > 0; i--)
     {
       Serial.println(i);
-      delay(1000);
+      delay(10);
     }
   }
     Serial.println("Start!");
