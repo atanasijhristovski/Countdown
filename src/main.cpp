@@ -18,6 +18,11 @@ void loop() {
 }
   //Die eingelesene Zalz wird in einer Variable gespeichert
   int zahl = Serial.parseInt();
+  delay(10);
+  while (Serial.available())
+  {
+    Serial.read();
+  }
   if (zahl != 0)
   {
     Serial.println(zahl);
